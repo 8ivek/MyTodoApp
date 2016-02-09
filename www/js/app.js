@@ -46,11 +46,11 @@ app.controller('main', function ($scope, $ionicModal, localStorageService) { //s
 	});
 	
 	$scope.openTaskModal = function(){
-		$scope.modal.show();
+		$scope.newTaskModal.show();
 	};
 	
 	$scope.closeTaskModal = function(){
-		$scope.modal.hide();
+		$scope.newTaskModal.hide();
 	};
 	
 	$scope.getTasks = function () {
@@ -76,9 +76,6 @@ app.controller('main', function ($scope, $ionicModal, localStorageService) { //s
 	}
 	$scope.completeTask = function (index) {
 		//updates a task as completed
-		if (index !== -1) {
-			$scope.tasks[index].completed = true;
-		}
 		localStorageService.set(taskData, $scope.tasks);
 	}
 })

@@ -24,7 +24,7 @@
 <body ng-app="mero-toronto" ng-controller="main" ng-init="getTasks()">
 <ion-pane>
   <ion-header-bar class="bar-stable">
-    <h1 class="title">Mero todos App</h1>
+    <h1 class="title">Mero Todos App - By 8iv</h1>
   </ion-header-bar>
   <ion-content>
     <div class="list card" ng-repeat="task in tasks track by $index">
@@ -39,7 +39,7 @@
         </span> <a class="tab-item assertive" ng-click="removeTask($index)"><i class="icon ion-android-close"></i></a> </div>
     </div>
     <ion-header-bar class="bar-dark">
-        <h1 class="title">Create your todos list</h1>
+        <h1 class="title">Create your Todos list</h1>
         <!-- New Task button-->
         <button class="button button-icon" ng-click="openTaskModal()">
             <i class="icon ion-compose"></i>
@@ -50,7 +50,7 @@
 <script id="new-task-modal.html" type="text/ng-template">
 	<ion-modal-view>
 		<ion-header-bar class="bar-dark">
-			<h1 class="title">Create a new Task</h1>
+			<h1 class="title">Create a New Task</h1>
 			<button class="button button-icon" ng-click="closeTaskModal()">
 				<i class="icon ion-android-close"></i>
 			</button>
